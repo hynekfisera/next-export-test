@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Home | iPhone 13 Pro</title>
       </Head>
+      <Header />
       <main>
         <section id="intro" className="max-w-screen-sm mx-auto px-8 text-center py-16">
           <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-800 mb-6 leading-tight">Velká věda za každým snímkem.</h1>

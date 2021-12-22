@@ -24,8 +24,8 @@ export default function Header() {
             );
           })}
         </nav>
-        <div onClick={() => console.log("wow")} className="w-6 h-6 cursor-pointer">
-          <FontAwesomeIcon icon={faBars} className="text-slate-700" />
+        <div onClick={() => setVisible(!visible)} className="cursor-pointer flex items-center justify-center">
+          <FontAwesomeIcon icon={faBars} className="w-8 h-8 text-3xl text-slate-700" />
         </div>
       </div>
     </header>
