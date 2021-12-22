@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
+  const [visible, setVisible] = useState(false);
+
   return (
     <header className="py-6 shadow">
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto px-8 flex items-center justify-between">
         <span className="text-2xl font-bold text-slate-900">iPhone 13 Pro</span>
-        <nav>
+        <nav className={`${visible ? "block" : "hidden"} sm:block`}>
           {[
             { text: "Domů", href: "/" },
             { text: "O produktu", href: "/oproduktu" },
@@ -20,6 +24,9 @@ export default function Header() {
             );
           })}
         </nav>
+        <div onClick={() => console.log("wow")} className="w-6 h-6 cursor-pointer">
+          <FontAwesomeIcon icon={faBars} className="text-slate-700" />
+        </div>
       </div>
     </header>
   );
