@@ -15,7 +15,7 @@ export default function Header() {
             { text: "Domů", href: "/" },
             { text: "O produktu", href: "/oproduktu" },
             { text: "Fotogalerie", href: "/fotogalerie" },
-            { text: "Kde zakoupit", href: "/kdezakoupit" },
+            { text: "Kde zakoupit?", href: "/kdezakoupit" },
           ].map((link, i) => {
             return (
               <Link href={link.href} key={i}>
