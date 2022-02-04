@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -21,9 +20,9 @@ export default function Home() {
           <div>
             <h2 className="text-4xl font-bold text-slate-800 mb-4">Informace o produktu</h2>
             <p className="block text-slate-600 mb-4">Až o 25 % větší jas venku, aby tvůj obsah vypadal na přímém slunci ještě živěji. Jedinečná OLED technologie posouvá úžasné rozlišení a barvy displeje na samou hranu. Ještě větší plocha displeje díky menší TrueDepth fotosoustavě.</p>
-            <Link href="/oproduktu">
-              <a className="btn btn-primary">O produktu</a>
-            </Link>
+            <a href="oproduktu.html" className="btn btn-primary">
+              O produktu
+            </a>
           </div>
         </section>
         <section className="max-w-screen-xl mx-auto px-8 py-8 flex flex-col-reverse sm:grid sm:flex-col sm:grid-cols-2 sm:gap-16 sm:items-center">
@@ -32,9 +31,9 @@ export default function Home() {
             <p className="block text-slate-600 mb-4">
               6,1&quot; Super Retina XDR displej přes celou plochu. Jemné rozlišení 2 532 x 1 170 bodů s jemností 460 pixelů na palec. Ceramic Shield, pevnější než jakékoli sklo na smartphonu. Soustava magnetů na zadní straně telefonu iPhone 13 nabízí mimořádně zajímavé funkce.
             </p>
-            <Link href="/fotogalerie">
-              <a className="btn btn-primary">Fotogalerie</a>
-            </Link>
+            <a href="fotogalerie.html" className="btn btn-primary">
+              Fotogalerie
+            </a>
           </div>
           <div className="mb-8 sm:mb-0">
             <img src="./assets/domu_fotogalerie.png" alt="iPhone 13 Pro" className="mx-auto max-h-96" />
@@ -42,9 +41,9 @@ export default function Home() {
         </section>
         <section className="max-w-screen-xl mx-auto px-8 pt-8 pb-32 flex flex-col items-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-6 text-center leading-tight">Skvělý design svědčí planetě.</h2>
-          <Link href="/oproduktu">
-            <a className="btn btn-primary">Kde zakoupit?</a>
-          </Link>
+          <a href="oproduktu.html" className="btn btn-primary">
+            Kde zakoupit?
+          </a>
         </section>
       </main>
     </>

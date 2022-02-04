@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
-import Link from "next/link";
 
 export default function oproduktu() {
   return (
@@ -45,9 +44,9 @@ export default function oproduktu() {
           </div>
           <div>
             <h2 className="text-4xl font-bold text-slate-800 mb-4">Nej. Víc. Pro</h2>
-            <Link href="/kdezakoupit">
-              <a className="btn btn-primary">Kde zakoupit?</a>
-            </Link>
+            <a href="kdezakoupit.html" className="btn btn-primary">
+              Kde zakoupit?
+            </a>
           </div>
         </section>
         <section className="max-w-screen-xl mx-auto px-8 pb-16">
